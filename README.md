@@ -150,3 +150,24 @@ Untuk kembali ke menu utama, silahkan input angka yang bertulisakn kembali ke me
 <img width="394" height="170" alt="image" src="https://github.com/user-attachments/assets/e2ef340f-c8f3-455a-943f-f0cba27fe523" />
 
 Ketika sudah selesai untuk mengelola data dan ingin menghentikan ataupun keluar dari program maka pada menu utama inpu angka 4 dan sistem akan selesai.
+
+**8. Input Validasi**\
+* Input harus berupa angka
+  <img width="469" height="88" alt="image" src="https://github.com/user-attachments/assets/39004440-2baa-4543-a0c5-075b36ea6872" />
+
+hasNextInt() mengecek apakah input berikutnya berupa bilangan bulat tanpa langsung mengambilnya. Jika bukan angka (misalnya huruf), program menampilkan pesan, lalu scanner.nextLine() membuang input salah tersebut agar tidak terjadi perulangan tanpa henti.
+
+* Input teks tidak boleh kosong
+  <img width="518" height="123" alt="image" src="https://github.com/user-attachments/assets/561ae933-5588-4b61-b9b6-96cb016c7860" />
+
+Method isBlank() mengecek apakah teks kosong atau hanya berisi spasi. Jika tidak kosong, break keluar dari perulangan. Jika kosong, pesan kesalahan ditampilkan dan perulangan mengulang pertanyaan yang sama.
+
+* Validasi rentang angka (Min & Max)
+<img width="560" height="63" alt="image" src="https://github.com/user-attachments/assets/d4506bba-eb10-4efa-aff1-60d64336981b" />
+
+Setelah dipastikan berupa angka, nilai dicek apakah berada dalam rentang yang diizinkan.
+
+* Validasi data kosong
+<img width="521" height="60" alt="image" src="https://github.com/user-attachments/assets/b465eb16-70ec-4b49-847b-bd44920cab68" />
+
+Sebelum menghapus, mengubah, atau menampilkan, program mengecek apakah list kosong. Jika kosong, method langsung berhenti dengan return supaya pengguna tidak diminta memilih nomor dari data yang tidak ada.
