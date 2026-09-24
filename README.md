@@ -109,3 +109,44 @@ Jika objeknya Santri, getJenisPengguna() akan mengembalikan teks "Santri", dan t
 <p align="justify">
 Jika objeknya Pengajar, getJenisPengguna() akan mengembalikan teks "Pengajar", dan toString() akan menampilkan nama, nomor telepon, dan kelas yang diajar.
 </p>
+
+## Tampilan Alur Program
+
+**1. Menu Utama**\
+<img width="399" height="146" alt="image" src="https://github.com/user-attachments/assets/3f4d4d17-e9aa-4d91-bb00-ed18446ce69a" />
+
+Tampilan awal atau yang biasa disebut sebagai menu utama dari program. Dapat dilihat bahwa menu utama menampilkan data apa saja yang bisa untuk dikelola.
+
+**2. CRUD Data**\
+<img width="262" height="126" alt="image" src="https://github.com/user-attachments/assets/2e1ad73c-e847-465e-b29d-1e67e51e8744" />
+
+Setelah kita memilih data yang ingin dikelola, kita akan memilih data tersebut ingin diapakan.
+
+**3. Tambah Data**\
+<img width="313" height="264" alt="image" src="https://github.com/user-attachments/assets/da71f23d-fc72-4d20-97a5-b843081b1d2a" />
+
+Di sini kita ambil contoh dari tambah data pada class kelas mengaji yang dimana pengguna akan meng input nama kelas, nama pengajar, dan kapasitas kelas. Pada setiap tambah data pada data santri, kelas mengaji, rumah quran, dan pengajar mempunyai input yang berbeda menyesuaikan dengan variabel/atribut yang terdapat pada class tersebut.
+
+**4. Lihat Data**\
+<img width="564" height="217" alt="image" src="https://github.com/user-attachments/assets/eb98a88a-df3f-4827-b8ed-124d16296f75" />
+
+Pada menu lihat data, sistem akan menampilkan data yang tersimpan pada ArrayList sesuai dengan apa yang ada pada data class.
+
+**5. Update Data**\
+<img width="562" height="316" alt="image" src="https://github.com/user-attachments/assets/94dd93ee-7055-42f9-8fb9-23306042d06e" />
+
+Ketika update data, semua data yang ada pada ArrayList pada class yang kita pilih akan muncul terlebih dahulu agar memudahkan ketika ingin update data jadi akan mengurangi kesalahan dalam memilih update data dan akan input sesuai dengan kebutuhan data class tersebut.
+
+**6. Hapus Data**\
+<img width="567" height="255" alt="image" src="https://github.com/user-attachments/assets/01e6df4c-ad48-4953-8d8e-fd3100a56ba8" />
+
+Menu hapus data akan menampilkan data terlebih dahulu kemudian input kode pada data yang ingin di hapus.
+
+**7. Kembali ke Menu Utama dan Keluar dari Program**\
+<img width="255" height="150" alt="image" src="https://github.com/user-attachments/assets/f820d048-ca34-44fd-8e27-dc07ebd1b47d" />
+
+Untuk kembali ke menu utama, silahkan input angka yang bertulisakn kembali ke menu utama
+
+<img width="394" height="170" alt="image" src="https://github.com/user-attachments/assets/e2ef340f-c8f3-455a-943f-f0cba27fe523" />
+
+Ketika sudah selesai untuk mengelola data dan ingin menghentikan ataupun keluar dari program maka pada menu utama inpu angka 4 dan sistem akan selesai.
