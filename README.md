@@ -151,14 +151,14 @@ Untuk kembali ke menu utama, silahkan input angka yang bertulisakn kembali ke me
 
 Ketika sudah selesai untuk mengelola data dan ingin menghentikan ataupun keluar dari program maka pada menu utama inpu angka 4 dan sistem akan selesai.
 
-**8. Input Validasi**\
+**8. Input Validasi**
 * Input harus berupa angka
-  <img width="469" height="88" alt="image" src="https://github.com/user-attachments/assets/39004440-2baa-4543-a0c5-075b36ea6872" />
+<img width="469" height="88" alt="image" src="https://github.com/user-attachments/assets/39004440-2baa-4543-a0c5-075b36ea6872" />
 
 hasNextInt() mengecek apakah input berikutnya berupa bilangan bulat tanpa langsung mengambilnya. Jika bukan angka (misalnya huruf), program menampilkan pesan, lalu scanner.nextLine() membuang input salah tersebut agar tidak terjadi perulangan tanpa henti.
 
 * Input teks tidak boleh kosong
-  <img width="518" height="123" alt="image" src="https://github.com/user-attachments/assets/561ae933-5588-4b61-b9b6-96cb016c7860" />
+<img width="518" height="123" alt="image" src="https://github.com/user-attachments/assets/561ae933-5588-4b61-b9b6-96cb016c7860" />
 
 Method isBlank() mengecek apakah teks kosong atau hanya berisi spasi. Jika tidak kosong, break keluar dari perulangan. Jika kosong, pesan kesalahan ditampilkan dan perulangan mengulang pertanyaan yang sama.
 
