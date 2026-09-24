@@ -8,3 +8,8 @@
 <p align="justify">
 Sistem Manajemen Rumah Qur'an Al-Hafizh adalah program berbasis Java yang digunakan untuk mengelola data kegiatan mengaji dengan metode UMMI secara sederhana. Program ini berfokus pada tiga data utama, yaitu Santri (nama, umur, nomor telepon wali, dan kelas), Kelas Mengaji (kode, nama kelas, pengajar, dan kapasitas), serta Pengajar (nama, nomor telepon, dan kelas yang diajar). Melalui menu di konsol, pengguna dapat melakukan CRUD (Create, Read, Update, Delete) terhadap ketiga data tersebut. Setiap input divalidasi, misalnya umur santri harus 5 sampai 17 tahun dan kelas yang penuh tidak dapat menerima santri baru dan untuk tempat menyimpan data sementara di memori menggunakan ArrayList.
 </p>
+
+### Alur Program
+<p align="justify">
+Program dimulai dari kelas MiniProject2 yang membuat objek Scanner, Menu, dan CrudUmmi. Kemudian, program menampilkan menu utama dengan pilihan untuk mengelola data santri, kelas mengaji, atau pengajar, serta pilihan keluar. Ketika pengguna memilih salah satu pengelolaan data, program masuk ke submenu yang berisi fitur tambah, lihat, ubah, dan hapus, lalu meminta input yang diperlukan. Setiap input diperiksa terlebih dahulu dengan validasi input dan pengguna diminta mengisi ulang jika belum sesuai, sedangkan data yang sudah valid langsung diproses dan hasilnya ditampilkan dalam bentuk pesan atau tabel. Setelah satu proses selesai, program kembali ke submenu dan pengguna dapat memilih kembali ke menu utama. Program berakhir ketika pengguna memilih menu keluar, dan program menampilkan ucapan penutup.
+</p>
