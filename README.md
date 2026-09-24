@@ -71,6 +71,7 @@ Class RumahQuran menyimpan atribut yang sama-sama dimiliki santri dan pengajar, 
 
 <img width="634" height="168" alt="image" src="https://github.com/user-attachments/assets/732c4077-7cb0-4038-8151-cf670a3fa85c" />
 
+<p align="justify">
 Class Santri dan Pengajar memakai kata kunci extends RumahQuran dan memanggil constructor superclass melalui super(nama, nomorTelepon), lalu menambahkan atribut khusus masing-masing: Santri memiliki umur dan kelasMengaji, sedangkan Pengajar memiliki mengajar.
 </p>
 
@@ -79,10 +80,32 @@ Class Santri dan Pengajar memakai kata kunci extends RumahQuran dan memanggil co
 Pada program saya juga menerapkan nilai tambah, yaitu penerapan pola MVC dan Polymorphism.
 
 ### MVC (Model-View-Controller)
-MVC digunakan agar kode program tidak tercampur dalam satu class besar. Dengan MVC, tampilan menu, penyimpanan data, dan proses logika program dipisah menjadi tiga bagian dengan tanggung jawabnya masing-masing, sehingga program lebih rapi, lebih mudah ditelusuri kalau ada kesalahan, dan lebih mudah dikembangkan tanpa mengganggu bagian lain.
 
-<img width="265" height="267" alt="image" src="https://github.com/user-attachments/assets/77159888-5d85-415c-accb-4b11eeb1db38" />\
-nkjjlkklk
+<p align="justify">
+MVC digunakan agar kode program tidak tercampur dalam satu class besar. Dengan MVC, tampilan menu, penyimpanan data, dan proses logika program dipisah menjadi tiga bagian dengan tanggung jawabnya masing-masing, sehingga program lebih rapi, lebih mudah ditelusuri kalau ada kesalahan, dan lebih mudah dikembangkan tanpa mengganggu bagian lain.
+</p>
+
+<img width="265" height="267" alt="image" src="https://github.com/user-attachments/assets/77159888-5d85-415c-accb-4b11eeb1db38" />
+
+<p align="justify">
+Program ini disusun dengan pola MVC (Model-View-Controller), yaitu pemisahan kode ke dalam tiga bagian berdasarkan tugasnya agar lebih rapi dan mudah diperbaiki, seperti terlihat pada struktur paket di gambar. Paket model berisi class RumahQuran, Santri, Pengajar, dan KelasMengaji yang menyimpan data beserta aturan validasinya. Paket view berisi class Menu yang menampilkan menu ke layar dan membaca input dari pengguna. Paket controller berisi class CrudUmmi yang menjadi penghubung keduanya, yaitu menerima pilihan pengguna, memvalidasi input, lalu memproses data (tambah, lihat, ubah, hapus) pada objek model yang disimpan di ArrayList. Adapun class MiniProject2 pada paket utama hanya berfungsi sebagai titik awal program (main) yang membuat objek Menu dan CrudUmmi, lalu menjalankan menu utama.
+</p>
 
 ### Polymorphism
+<img width="389" height="24" alt="image" src="https://github.com/user-attachments/assets/2005aa44-207e-4cc2-9d66-04820ab9175f" />
 
+<p align="justify">
+Polymorphism digunakan agar satu method dengan nama yang sama dapat menghasilkan perilaku berbeda tergantung jenis objeknya, tanpa harus membuat percabangan untuk mengecek jenis objek satu per satu. Pada gambar di atas, dapat dilihat bahwa polymorphism diterapkan melalui method overriding pada method getJenisPengguna() yang dideklarasikan sebagai method abstrak di superclass RumahQuran. Method ini di-override oleh subclass Santri dan Pengajar, sehingga meskipun dipanggil dengan cara yang sama, hasilnya berbeda tergantung jenis objeknya.
+</p>
+
+<img width="665" height="108" alt="image" src="https://github.com/user-attachments/assets/d296b5ff-6048-4f73-8f40-2e851f02f630" />
+
+<p align="justify">
+Jika objeknya Santri, getJenisPengguna() akan mengembalikan teks "Santri", dan toString() akan menampilkan nama, umur, nomor telepon wali, dan kode kelas.
+</p>
+
+<img width="455" height="107" alt="image" src="https://github.com/user-attachments/assets/54079c30-62be-4aad-8cf4-86c6d3570a0a" />
+
+<p align="justify">
+Jika objeknya Pengajar, getJenisPengguna() akan mengembalikan teks "Pengajar", dan toString() akan menampilkan nama, nomor telepon, dan kelas yang diajar.
+</p>
